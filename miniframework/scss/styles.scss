@@ -1,8 +1,11 @@
 @import "variables";
 @import "composent/bouton";
+<<<<<<< HEAD
 @import "composent/breackpoints";
 @import "media";
 @import "composent/grid";
+=======
+>>>>>>> f475eb36ee1d99bd38606bfad36ff29ef4646ee9
 
 body{
     background-color: $primary;
@@ -10,28 +13,16 @@ body{
 
 
 .button{
-    background-color: $color_button_primary;
+    background: $background_color_button_primary;
     color: $color_texte_button;
     font-size: $big_button;
-    box-shadow: $shadow_button;
+    border: $border_button;
     border-radius: $border_radius_button;
-    border-style: none;
+    padding: $padding_button;
 
     &--petit{
-        background-color: $color_button_secondary;
+        background-color: $background_color_button_secondary;
         font-size: $small_button;
-        box-shadow: $shadow_button;
         border-radius: $border_radius_button;
     }
-}
-
-.grid {
-    display: $grid;
-    grid-gap: $space_line_column;
-    grid-template-columns: repeat(12, 1fr);
-}
-      
-.item {
-    padding: $space_line_column $pace_horizontal;
-    background-color: $color;
 }
