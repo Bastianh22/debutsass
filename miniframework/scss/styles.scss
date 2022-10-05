@@ -23,11 +23,13 @@ body{
         border-radius: $border_radius_button;
     }
 }
+
 .a{
   color: inherit;
   text-decoration: none;
 }
 
+// partie william -> grid
 @mixin grid-flex ($columns : $number_column, $gutter : $width_row_column, $prefix : col) { // Mixin (fonction) grid-flex avec 3 paramètres (nombre colonne, espacement, préfixe du mot)
     
   .grid .row { // Appel la class grid et row
