@@ -8,7 +8,7 @@ body{
     background-color: $primary;
 }
 
-
+//déclaration du style pour les boutons
 .button{
     background: $background_color_button_primary;
     color: $color_texte_button;
@@ -24,28 +24,41 @@ body{
     }
 }
 
-@mixin grid-flex($cols: $number_column, $gutter: $width_column, $prefix: col) {
-    .container-cols .row {
-      display: $display;
-      gap: $gutter; 
-    }
+// partie william -> grid
+@mixin grid-flex ($columns : $number_column, $gutter : $width_row_column, $prefix : col) { // Mixin (fonction) grid-flex avec 3 paramètres (nombre colonne, espacement, préfixe du mot)
+    
+  .grid .row { // Appel la class grid et row
+      
+    display : $display; // Element flexible
+
+    gap : $gutter; // Espacement des lignes et colonnes (gouttière)
+  }
   
-    @for $i from 1 through $cols {
-      .#{$prefix}-#{$i} {
-        $witdth: calc(100% / $cols) * $i;
-        flex-basis: $witdth;
-        box-sizing: $box-sizing;
+  @for $i from 1 through $columns { // Boucle for qui compte de 1 jusqu'à 12 (colonnes)
+
+      .#{$prefix}-#{$i} { // Appel le prefixe col suivi du tiret puis du nombre comme col-12
+
+        $witdth : calc(100% / $columns) * $i; // Calcul la longueur de la colonne
+
+        flex-basis : $witdth; // Largeur de la boite pour le contenu
+
+        box-sizing : $size; // Taille de la bordure
       }
     }
   }
   
-  /* MIXIN DEMO */
-  @include grid-flex();
+  @include grid-flex (); // Inclus mixin grid-flex
 
-  .item {
-    text-align: center;
-    padding: 10px 3px;
-    margin: 3px 0;
-    border: 1px solid #ccc;
+  .item { // Appel la class item 
+
+    background-color: $color; // Couleur du fond
+    
+    text-align: $align; // Alignement du texte
+    
+    padding: $padding_row_column; // Ecart de la bordure
+    
+    margin: $margin_row_column; // Marge de la bordure
+    
+    border: $border_row_column; // Bordure 
   }
   

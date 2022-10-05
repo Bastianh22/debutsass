@@ -31,10 +31,14 @@ body {
   border-radius: 6px;
 }
 
-/* MIXIN DEMO */
-.container-cols .row {
+.button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.grid .row {
   display: flex;
-  gap: 5px;
+  gap: 50px;
 }
 
 .col-1 {
