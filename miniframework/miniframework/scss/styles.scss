@@ -1,0 +1,16 @@
+@import "variables";
+@import "composent/bouton";
+
+body{
+    background-color: $primary;
+}
+
+.button{
+    background-color: $colorbuttonprimary;
+    font-size: $grosBouton;
+
+    &--petit{
+        background-color: $colorbuttonsecondary;
+        font-size: $petitBouton;
+    }
+}
