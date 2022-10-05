@@ -5,12 +5,19 @@ body{
     background-color: $primary;
 }
 
+
 .button{
-    background-color: $colorbuttonprimary;
-    font-size: $grosBouton;
+    background-color: $color_button_primary;
+    color: $color_texte_button;
+    font-size: $big_button;
+    box-shadow: $shadow_button;
+    border-radius: $border_radius_button;
+    border-style: none;
 
     &--petit{
-        background-color: $colorbuttonsecondary;
-        font-size: $petitBouton;
+        background-color: $color_button_secondary;
+        font-size: $small_button;
+        box-shadow: $shadow_button;
+        border-radius: $border_radius_button;
     }
 }
