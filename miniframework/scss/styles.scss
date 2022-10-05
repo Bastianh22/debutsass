@@ -1,7 +1,6 @@
 @import "variables";
 @import "composent/bouton";
 @import "composent/breackpoints";
-@import "media";
 @import "composent/grid";
 
 body{
@@ -32,7 +31,7 @@ body{
   
     @for $i from 1 through $cols {
       .#{$prefix}-#{$i} {
-        $w: calc (100% / $cols) * $i;
+        $w: calc(100% / $cols) * $i;
         flex-basis: $w;
         box-sizing: border-box;
       }
