@@ -23,6 +23,9 @@ body{
         border-radius: $border_radius_button;
     }
 }
+.a{
+  text-decoration: none;
+}
 
 @mixin grid-flex($cols: $number_column, $gutter: $width_column, $prefix: col) {
     .container-cols .row {
