@@ -43,6 +43,7 @@ body{
   @include grid-flex();
 
   .item {
+    background-color: #666;
     text-align: center;
     padding: 10px 3px;
     margin: 3px 0;
