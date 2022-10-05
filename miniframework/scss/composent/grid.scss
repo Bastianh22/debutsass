@@ -1,5 +1,12 @@
+// Déclaration des variables pour la mixin grid-flex
+$number_column : 12; // Nombre de colonne
+$width_row_column : 50px; // Longueur pour la ligne et la colonne
+$display : flex; // Element flexible
+$size : border-box; // Taille de la bordure
 
-$number_column : 12;
-$width_column : 5px;
-$display : flex;
-$box-sizing : border-box;
+// Déclaration des variables de la class l'item
+$color : grey; // Couleur grise
+$align : center; // Centre l'alignement 
+$padding_row_column : 10px 5px; // Ecart de la bordure
+$margin_row_column : 5px 0px; // Marge de la bordure
+$border_row_column : solid #ccc 10px; // Bordure
