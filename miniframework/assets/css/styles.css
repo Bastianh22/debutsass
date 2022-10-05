@@ -97,14 +97,27 @@ body {
   box-sizing: border-box;
 }
 
+/* padding          -> espacement des éléments a l'intérieur de l'élément
+spécifique
+   border           -> bordure de la carte de profile
+   background-color -> couleur d'arrière plan (beige)
+   color            -> couleur du texte se trouvant dans le carte de profile
+   box-shadow       -> ombrage autour de la carte de profile
+*/
 .card {
-  padding: 0.4rem;
+  padding: 0.4rem; 
   border: 1px solid black;
   background-color: lemonchiffon;
   color: brown;
   box-shadow: 0 5px 10px white;
 }
 
+/* 
+   background-image -> image imprégnée
+   width            -> largeur de l'image
+   height           -> hauteur de l'image
+   display + margin -> centrer l'image
+*/
 .card .card_img_profile {
   background-image: url("../img/human.jpg");
   width: 300px;
@@ -113,16 +126,29 @@ body {
   margin: auto;
 }
 
+/* 
+   text-align       -> aligne le texte au centre
+   border-top       -> bordure du dessus
+*/
 .card .card_profile_name {
   text-align: center;
-  padding: 10px 3px;
-  margin: 3px 0;
-  border: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
 
+/* 
+   font-size        -> taille de la police
+   padding          -> espacement exterieur autour du texte
+   text-align       -> aligner le text au centre horizontalement
+*/
 .card .card_text {
   font-size: 16px;
   padding: 1rem;
   text-align: center;
+}
+
+/* centrer le bouton */
+.card .button_card {
+  display: block;
+  margin: auto;
 }
 /*# sourceMappingURL=styles.css.map */
