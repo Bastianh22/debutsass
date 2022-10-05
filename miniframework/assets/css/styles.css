@@ -97,25 +97,11 @@ body {
   box-sizing: border-box;
 }
 
-.card {
-  border: 1px solid black;
-  background-color: lemonchiffon;
-  color: brown;
-  box-shadow: 0 5px 10px white;
-}
-
-.card .card_img_profile {
-  background-image: url("../img/human.jpg");
-  width: 100%;
-  height: 400px;
-}
-
-.card .card_profile_name {
+.item {
   text-align: center;
+  padding: 10px 3px;
+  margin: 3px 0;
+  border: 1px solid #ccc;
 }
 
-.card .card_text {
-  font-size: 16px;
-  padding: 1rem;
-}
 /*# sourceMappingURL=styles.css.map */
