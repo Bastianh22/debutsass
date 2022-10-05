@@ -4,12 +4,28 @@ body {
 
 .button {
   background-color: blue;
+  color: #fff;
   font-size: 24px;
+  box-shadow: 10px 10px black;
+  border-radius: 25px;
+  border-style: none;
 }
 .button--petit {
   background-color: purple;
   font-size: 10px;
-  display: flex;
+  box-shadow: 10px 10px black;
+  border-radius: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.item {
+  padding: 1.5rem 0;
+  background-color: orange;
 }
 
 /*# sourceMappingURL=styles.css.map */

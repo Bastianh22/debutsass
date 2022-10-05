@@ -1,5 +1,6 @@
 @import "variables";
 @import "composent/bouton";
+@import "composent/grid";
 
 body{
     background-color: $primary;
@@ -20,15 +21,15 @@ body{
         box-shadow: $shadow_button;
         border-radius: $border_radius_button;
     }
+}
 
 .grid {
     display: $grid;
     grid-gap: $space_line_column;
     grid-template-columns: repeat(12, 1fr);
-    }
+}
       
 .item {
     padding: $space_line_column $pace_horizontal;
     background-color: $color;
-    }
 }
