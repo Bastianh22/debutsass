@@ -24,6 +24,7 @@ body {
   border: 3px solid black;
   border-radius: 6px;
   padding: 6px 12px;
+  text-decoration: none;
 }
 .button--petit {
   background-color: purple;
