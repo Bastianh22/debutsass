@@ -23,3 +23,22 @@ body{
         border-radius: $border_radius_button;
     }
 }
+
+@mixin grid-flex($cols: 12, $gutter: 5px, $prefix: col) {
+    .container-cols .row {
+      display: flex;
+      gap: $gutter; 
+    }
+  
+    @for $i from 1 through $cols {
+      .#{$prefix}-#{$i} {
+        $w: calc (100% / $cols) * $i;
+        flex-basis: $w;
+        box-sizing: border-box;
+      }
+    }
+  }
+  
+  /* MIXIN DEMO */
+  @include grid-flex();
+  

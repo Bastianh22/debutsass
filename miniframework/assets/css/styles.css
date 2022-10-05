@@ -38,37 +38,4 @@ body {
   border-radius: 25px;
 }
 
-/*.grid {
-    display: $grid;
-    grid-gap: $space_line_column;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows:repeat(3,1fr)
-}
-
-.item {
-    padding: $space_line_column $pace_horizontal;
-    background-color: $color;
-}*/
-.row:after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
-.row + .row {
-  margin-top: 3%;
-}
-
-[class^=col-] {
-  float: left;
-  margin-right: 3%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-[class^=col-]:last-child {
-  margin-right: 0%;
-  border-radius: 6px;
-}
-
 /*# sourceMappingURL=styles.css.map */
