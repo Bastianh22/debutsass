@@ -36,29 +36,28 @@ body{
   
   @for $i from 1 through $columns { // Boucle for qui compte de 1 jusqu'à 12 (colonnes)
 
-      .#{$prefix}-#{$i} { // Appel le prefixe col suivi du tiret puis du nombre comme col-12
+    .#{$prefix}-#{$i} { // Appel le prefixe col suivi du tiret puis du nombre comme col-12
 
-        $witdth : calc(100% / $columns) * $i; // Calcul la longueur de la colonne
+      $witdth : calc(100% / $columns) * $i; // Calcul la longueur de la colonne
 
-        flex-basis : $witdth; // Largeur de la boite pour le contenu
+      flex-basis : $witdth; // Largeur de la boite pour le contenu
 
-        box-sizing : $size; // Taille de la bordure
-      }
+      box-sizing : $size; // Taille de la bordure
     }
   }
+}
   
-  @include grid-flex (); // Inclus mixin grid-flex
+@include grid-flex (); // Inclus mixin grid-flex
 
-  .item { // Appel la class item 
+.item { // Appel la class item 
 
-    background-color: $color; // Couleur du fond
+  background-color: $color; // Couleur du fond
     
-    text-align: $align; // Alignement du texte
+  text-align: $align; // Alignement du texte
     
-    padding: $padding_row_column; // Ecart de la bordure
+  padding: $padding_row_column; // Ecart de la bordure
     
-    margin: $margin_row_column; // Marge de la bordure
+  margin: $margin_row_column; // Marge de la bordure
     
-    border: $border_row_column; // Bordure 
-  }
-  
+  border: $border_row_column; // Bordure 
+} 
