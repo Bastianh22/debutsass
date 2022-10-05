@@ -22,52 +22,25 @@ body{
         font-size: $small_button;
         border-radius: $border_radius_button;
     }
-} 
+}
 
-<<<<<<< Updated upstream
 @mixin grid-flex($cols: $number_column, $gutter: $width_column, $prefix: col) {
     .container-cols .row {
       display: $display;
-=======
-// Test
-// Grille flexbox
-//
-// @param {Cols} $cols [12] - Nombre de colonnes 
-// @param {Gutter} $gutter [5px] - Largeur de la gouttière
-// @param {Prefix} $prefix [col] - Prefixe pour les noms des classes
-@mixin grid-flex ($cols: 12, $gutter: 5px, $prefix: col) {
-
-    .container-cols .row {
-
-      display: flex;
-
->>>>>>> Stashed changes
       gap: $gutter; 
     }
   
     @for $i from 1 through $cols {
-<<<<<<< Updated upstream
       .#{$prefix}-#{$i} {
         $witdth: calc(100% / $cols) * $i;
         flex-basis: $witdth;
         box-sizing: $box-sizing;
-=======
-
-      .#{$prefix}-#{$i} {
-
-        $w: calc (100% / $cols) * $i;
-
-        flex-basis: $w;
-
-        box-sizing: border-box;
->>>>>>> Stashed changes
       }
     }
   }
   
   /* MIXIN DEMO */
   @include grid-flex();
-<<<<<<< Updated upstream
 
   .item {
     text-align: center;
@@ -75,6 +48,4 @@ body{
     margin: 3px 0;
     border: 1px solid #ccc;
   }
-=======
->>>>>>> Stashed changes
   

@@ -38,16 +38,11 @@ body {
 }
 
 .col-1 {
-<<<<<<< Updated upstream
   flex-basis: 8.3333333333%;
-=======
-  flex-basis: calc 8.3333333333%;
->>>>>>> Stashed changes
   box-sizing: border-box;
 }
 
 .col-2 {
-<<<<<<< Updated upstream
   flex-basis: 16.6666666667%;
   box-sizing: border-box;
 }
@@ -64,59 +59,6 @@ body {
 
 .col-5 {
   flex-basis: 41.6666666667%;
-=======
-  flex-basis: calc 16.6666666667%;
-  box-sizing: border-box;
-}
-
-.col-3 {
-  flex-basis: calc 25%;
-  box-sizing: border-box;
-}
-
-.col-4 {
-  flex-basis: calc 33.3333333333%;
-  box-sizing: border-box;
-}
-
-.col-5 {
-  flex-basis: calc 41.6666666667%;
-  box-sizing: border-box;
-}
-
-.col-6 {
-  flex-basis: calc 50%;
-  box-sizing: border-box;
-}
-
-.col-7 {
-  flex-basis: calc 58.3333333333%;
-  box-sizing: border-box;
-}
-
-.col-8 {
-  flex-basis: calc 66.6666666667%;
-  box-sizing: border-box;
-}
-
-.col-9 {
-  flex-basis: calc 75%;
-  box-sizing: border-box;
-}
-
-.col-10 {
-  flex-basis: calc 83.3333333333%;
-  box-sizing: border-box;
-}
-
-.col-11 {
-  flex-basis: calc 91.6666666667%;
-  box-sizing: border-box;
-}
-
-.col-12 {
-  flex-basis: calc 100%;
->>>>>>> Stashed changes
   box-sizing: border-box;
 }
 
