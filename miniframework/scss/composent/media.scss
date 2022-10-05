@@ -1,18 +1,18 @@
-// Small devices
+// phone
 @mixin sm {
     @media (min-width: #{$screen-sm-min}) {
         @content;
     }
  }
   
- // Medium devices
+ // moyen ecran 
  @mixin md {
     @media (min-width: #{$screen-md-min}) {
         @content;
     }
  }
   
- // Large devices
+ // Large ecran
  @mixin lg {
     @media (min-width: #{$screen-lg-min}) {
         @content;
