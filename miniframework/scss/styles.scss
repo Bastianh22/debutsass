@@ -24,21 +24,28 @@ body{
     }
 }
 
-@mixin grid-flex($cols: 12, $gutter: 5px, $prefix: col) {
+@mixin grid-flex($cols: $number_column, $gutter: $width_column, $prefix: col) {
     .container-cols .row {
-      display: flex;
+      display: $display;
       gap: $gutter; 
     }
   
     @for $i from 1 through $cols {
       .#{$prefix}-#{$i} {
-        $w: calc(100% / $cols) * $i;
-        flex-basis: $w;
-        box-sizing: border-box;
+        $witdth: calc(100% / $cols) * $i;
+        flex-basis: $witdth;
+        box-sizing: $box-sizing;
       }
     }
   }
   
   /* MIXIN DEMO */
   @include grid-flex();
+
+  .item {
+    text-align: center;
+    padding: 10px 3px;
+    margin: 3px 0;
+    border: 1px solid #ccc;
+  }
   

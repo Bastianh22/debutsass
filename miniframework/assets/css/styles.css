@@ -115,6 +115,9 @@ body {
 
 .card .card_profile_name {
   text-align: center;
+  padding: 10px 3px;
+  margin: 3px 0;
+  border: 1px solid #ccc;
 }
 
 .card .card_text {
