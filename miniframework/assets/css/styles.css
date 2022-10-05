@@ -1,3 +1,18 @@
+#content {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  #content {
+    width: 668px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #content {
+    width: 1024px;
+  }
+}
+
 body {
   background-color: #656565;
 }
@@ -17,15 +32,36 @@ body {
   border-radius: 25px;
 }
 
-.grid {
-  display: grid;
-  grid-gap: 1.5rem;
-  grid-template-columns: repeat(12, 1fr);
+/*.grid {
+    display: $grid;
+    grid-gap: $space_line_column;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(3,1fr)
 }
 
 .item {
-  padding: 1.5rem 0;
-  background-color: orange;
+    padding: $space_line_column $pace_horizontal;
+    background-color: $color;
+}*/
+.row:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.row + .row {
+  margin-top: 3%;
+}
+
+[class^=col-] {
+  float: left;
+  margin-right: 3%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+[class^=col-]:last-child {
+  margin-right: 0%;
 }
 
 /*# sourceMappingURL=styles.css.map */
