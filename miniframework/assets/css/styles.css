@@ -31,6 +31,11 @@ body {
   border-radius: 6px;
 }
 
+.a{
+  color: inherit;
+  text-decoration: none;
+}
+
 /* MIXIN DEMO */
 .container-cols .row {
   display: flex;
