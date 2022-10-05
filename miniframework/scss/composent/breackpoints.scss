@@ -1,0 +1,25 @@
+// $breakpoints: (
+//     "phone-down": 500px,
+//     "tablet-up": 768px,
+//     "tablet-down": 900px,
+//     "desktop-up": 1024px,
+//     "desktop-down": 1280px,
+//     "widescreen-up": 1440px
+// );
+// @mixin media-min($_key) {
+//     @media screen and (min-width: map-get($breakpoints, $_key)) {
+//         &{ @content; }
+//     }
+// }
+
+// petite tablets et telephone
+$screen-sm-min: 576px;
+ 
+// petite tablets vue portait
+$screen-md-min: 768px;
+ 
+// destop
+$screen-lg-min: 992px;
+ 
+// Large tablets et desktops
+$screen-xl-min: 1200px;
