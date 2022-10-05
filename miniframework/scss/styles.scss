@@ -1,7 +1,5 @@
 @import "variables";
 @import "composent/bouton";
-@import "composent/breakpoints.scss";
-@import "composent/grid";
 
 body{
     background-color: $primary;
@@ -9,55 +7,16 @@ body{
 
 
 .button{
-    background-color: $color_button_primary;
+    background: $background_color_button_primary;
     color: $color_texte_button;
     font-size: $big_button;
-    box-shadow: $shadow_button;
+    border: $border_button;
     border-radius: $border_radius_button;
-    border-style: none;
+    padding: $padding_button;
 
     &--petit{
-        background-color: $color_button_secondary;
+        background-color: $background_color_button_secondary;
         font-size: $small_button;
-        box-shadow: $shadow_button;
         border-radius: $border_radius_button;
     }
-}
-
-/*.grid {
-    display: $grid;
-    grid-gap: $space_line_column;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows:repeat(3,1fr)
-}
-      
-.item {
-    padding: $space_line_column $pace_horizontal;
-    background-color: $color;
-}*/ 
-
-%clearfix:after {
-	display:block;
-	clear:both;
-	content:'';
-}
-
-.row {
-	@extend %clearfix;
-
-	& + & {
-		margin-top:$grid-spacing;
-	}
-}
-
-[class^="col-"] {
-	float:left;
-	margin-right:$grid-spacing;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-
-	&:last-child {
-		margin-right:0%;
-	}
 }
