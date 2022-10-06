@@ -30,6 +30,10 @@ body {
   font-size: 10px;
   border-radius: 6px;
 }
+.button a{
+  color: #fff;
+  text-decoration: none;
+}
 
 .grid .row {
   display: flex;
