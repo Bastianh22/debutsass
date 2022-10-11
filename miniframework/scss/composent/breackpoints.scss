@@ -42,7 +42,9 @@ $breakpoints: (
     @include xs{
         background: red;
         .button{
-            background: yellow;
+            background-color: $secondary;
+            font-size: $small_button;
+            border-radius: $border_radius_button;
         }
         .item .col-2{
             display: block;
@@ -51,7 +53,11 @@ $breakpoints: (
     @include sm{
         background: blue;
         .button{
-            background: red;
+            background: $primary;
+            font-size: $big_button;
+            border: $border_button;
+            border-radius: $border_radius_button;
+            padding: $padding_button;
         }
     }
     @include md{
