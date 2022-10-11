@@ -13,6 +13,43 @@
   }
 }
 
+@media (min-width: 0) {
+  .responsive-test {
+    background: red;
+  }
+  .responsive-test .button {
+    background: yellow;
+  }
+}
+@media (min-width: 480px) {
+  .responsive-test {
+    background: blue;
+  }
+  .responsive-test .button {
+    background: red;
+  }
+}
+@media (min-width: 720px) {
+  .responsive-test {
+    background: green;
+  }
+}
+@media (min-width: 960px) {
+  .responsive-test {
+    background: purple;
+  }
+}
+@media (min-width: 1200px) {
+  .responsive-test {
+    background: pink;
+  }
+}
+@media (min-width: 1400px) {
+  .responsive-test {
+    background: grey;
+  }
+}
+
 body {
   background-color: red;
 }
@@ -27,10 +64,6 @@ body {
     background-color: black;
   }
 }
-body {
-  background-color: #007bff;
-}
-
 .button {
   background: #007bff;
   font-size: 24px;
