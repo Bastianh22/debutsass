@@ -12,7 +12,7 @@ iPad 3
    // Styles /
  }
  // Large screens ----------- /
- @media only screen and (min-width: 1824px) {
+ @media only screen and (min-width: 1824px) { 
    // Styles /
  }
  // iPhone 4 ----------- /
@@ -66,4 +66,60 @@ iPad 3
    / Styles */
  }
  
+<<<<<<< HEAD
  
+=======
+ @media screen and (min-width: 600px) {
+   body {
+     background-color: blue;
+   }
+ }
+ @media  (min-width: 1000px) {
+   body {
+     background-color: black;
+   }
+ }
+// phone
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+  
+ // moyen ecran 
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+  
+ // Large ecran
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+  
+ // grand ecran
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+  
+ // Custom devices
+ @mixin rwd($screen) {
+
+    @media (min-width: #{$screen+'px'}) {
+
+    @media (min-width: $screen) {
+       @content;
+    }
+ }
+}
+ @mixin media-queries-max($width) {
+    @media (max-width: $width) { @content; }
+}
+ 
+
+>>>>>>> 71e0469dc25c26a2eea4670dfb6d18711461ec21
