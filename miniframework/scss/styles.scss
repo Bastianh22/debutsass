@@ -10,7 +10,7 @@ body{
 
 //déclaration du style pour les boutons
 .button{
-    background: $background_color_button_primary;
+    background: $primary;
     color: $color_texte_button;
     font-size: $big_button;
     border: $border_button;
@@ -18,7 +18,7 @@ body{
     padding: $padding_button;
 
     &--petit{
-        background-color: $background_color_button_secondary;
+        background-color: $secondary;
         font-size: $small_button;
         border-radius: $border_radius_button;
     }
