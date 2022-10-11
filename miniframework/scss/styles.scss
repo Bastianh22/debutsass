@@ -11,12 +11,15 @@ body{
 //déclaration du style pour les boutons
 .button{
     background: $primary;
-    color: $color_texte_button;
     font-size: $big_button;
     border: $border_button;
     border-radius: $border_radius_button;
     padding: $padding_button;
-    text-decoration: $text-decor;
+
+    .a{
+      text-decoration: $text-decor;
+      color: $color_texte_button;
+    }
 
     &--petit{
         background-color: $secondary;
