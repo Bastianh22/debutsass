@@ -16,6 +16,7 @@ body{
     border: $border_button;
     border-radius: $border_radius_button;
     padding: $padding_button;
+    text-decoration: $text-decor;
 
     &--petit{
         background-color: $secondary;
