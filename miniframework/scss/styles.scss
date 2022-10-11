@@ -16,16 +16,16 @@ body{
     border-radius: $border_radius_button;
     padding: $padding_button;
 
-    .a{
-      text-decoration: $text-decor;
-      color: $color_texte_button;
-    }
-
     &--petit{
         background-color: $secondary;
         font-size: $small_button;
         border-radius: $border_radius_button;
     }
+}
+
+.a{
+  text-decoration: $text-decor;
+  color: $color_texte_button;
 }
 
 // partie william -> grid
