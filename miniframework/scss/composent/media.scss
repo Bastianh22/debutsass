@@ -42,10 +42,14 @@ body {
   
  // Custom devices
  @mixin rwd($screen) {
-    @media (min-width: #{$screen + 'px'} ) {
+
+    @media (min-width: #{$screen+'px'}) {
+
+    @media (min-width: $screen) {
        @content;
     }
  }
+}
  @mixin media-queries-max($width) {
     @media (max-width: $width) { @content; }
 }
